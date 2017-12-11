@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Palatino.ttc">
+            <string>Palatino-Roman</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokerDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CUv-m4-J3H" userLabel="Whole Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1Mm-SN-YZq" userLabel="TopStack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-gH-644" userLabel="Logo Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GRb-Wr-iVC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="H16-G6-ggK" userLabel="CasinoLabelStack View">
+                                                <rect key="frame" x="0.0" y="57" width="375" height="51"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-ZD-2am">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="101-8Q-Fks" userLabel="Casino Stack View">
+                                                <rect key="frame" x="0.0" y="114" width="375" height="51.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-xc-3hg" userLabel="casinoDice1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice1"/>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da7-aJ-EOx" userLabel="casinoDice2">
+                                                        <rect key="frame" x="76" y="0.0" width="71.5" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice2"/>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5K-13-3E9" userLabel="casinoDice3">
+                                                        <rect key="frame" x="151.5" y="0.0" width="72" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice3"/>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDf-Fq-X5b" userLabel="casinoDice4">
+                                                        <rect key="frame" x="227.5" y="0.0" width="71.5" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice4"/>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH8-St-RgL" userLabel="casinoDice5">
+                                                        <rect key="frame" x="303" y="0.0" width="72" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice5"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="YRw-Oh-JoD" userLabel="BankStackView">
+                                                <rect key="frame" x="0.0" y="171.5" width="375" height="51"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" Bank: 9999999999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="IVO-4A-TVm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="51"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Round: 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="WpP-wx-IwA">
+                                                        <rect key="frame" x="220" y="0.0" width="155" height="51"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="K9T-W5-bA9" userLabel="GameDescriptionView">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Poker Dice!  Please press on Player to set it to your Name." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="3" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-wU-IKo">
+                                                <rect key="frame" x="20" y="80" width="335" height="63"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player's money: 999999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="fEe-Bm-g7I">
+                                                <rect key="frame" x="0.0" y="199.5" width="375" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fEe-Bm-g7I" firstAttribute="leading" secondItem="K9T-W5-bA9" secondAttribute="leading" id="2TE-up-Sqa"/>
+                                            <constraint firstItem="LoO-wU-IKo" firstAttribute="centerY" secondItem="K9T-W5-bA9" secondAttribute="centerY" id="6rF-Nq-u3Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="fEe-Bm-g7I" secondAttribute="trailing" id="9rt-Gi-Kef"/>
+                                            <constraint firstItem="LoO-wU-IKo" firstAttribute="centerX" secondItem="K9T-W5-bA9" secondAttribute="centerX" id="9tQ-w9-YPC"/>
+                                            <constraint firstItem="LoO-wU-IKo" firstAttribute="leading" secondItem="K9T-W5-bA9" secondAttribute="leading" constant="20" id="TjF-Tv-I4s"/>
+                                            <constraint firstAttribute="bottom" secondItem="fEe-Bm-g7I" secondAttribute="bottom" id="tgA-fp-aR7"/>
+                                            <constraint firstAttribute="trailing" secondItem="LoO-wU-IKo" secondAttribute="trailing" constant="20" id="u7s-aP-2bD"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="eXw-Yb-XSK" userLabel="BottomStack View">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="27q-sq-N5o" userLabel="Player Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-ce-EkY" userLabel="playerDice1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice2"/>
+                                                        <connections>
+                                                            <action selector="changePlayerDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAe-La-use"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyR-P2-rTw" userLabel="playerDice2">
+                                                        <rect key="frame" x="76" y="0.0" width="71.5" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice3"/>
+                                                        <connections>
+                                                            <action selector="changePlayerDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6O-Ox-Fhp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY1-cD-dwB" userLabel="playerDice3">
+                                                        <rect key="frame" x="151.5" y="0.0" width="72" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice4"/>
+                                                        <connections>
+                                                            <action selector="changePlayerDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ml9-kc-3RE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqM-vg-vrB" userLabel="playerDice4">
+                                                        <rect key="frame" x="227.5" y="0.0" width="71.5" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice5"/>
+                                                        <connections>
+                                                            <action selector="changePlayerDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMN-Wc-nX3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuL-wK-TM7" userLabel="playerDice5">
+                                                        <rect key="frame" x="303" y="0.0" width="72" height="51.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal" backgroundImage="dice6"/>
+                                                        <connections>
+                                                            <action selector="changePlayerDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrW-mu-jUi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-UT-MtN" userLabel="BetsStack View">
+                                                <rect key="frame" x="0.0" y="57.5" width="375" height="51"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-yw-qKB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="51"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="Player">
+                                                            <color key="titleColor" red="0.042759068310260773" green="0.053709350526332855" blue="0.019506653770804405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="setPlayerName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kav-CP-4bj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b47-MA-aS1">
+                                                        <rect key="frame" x="91.5" y="0.0" width="46" height="51"/>
+                                                        <color key="backgroundColor" red="0.64887946844100952" green="0.8163723349571228" blue="0.069088198244571686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="10">
+                                                            <color key="titleColor" red="0.72935181856155396" green="0.17671751976013184" blue="0.084049619734287262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="makeBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pY-Gz-zTP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3El-0N-D3c">
+                                                        <rect key="frame" x="141.5" y="0.0" width="46" height="51"/>
+                                                        <color key="backgroundColor" red="0.64887946844100952" green="0.8163723349571228" blue="0.069088198244571686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="20">
+                                                            <color key="titleColor" red="0.72935181856155396" green="0.17671751976013184" blue="0.084049619734287262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="makeBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vl4-Yg-qvn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="13" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FB-DH-zJu">
+                                                        <rect key="frame" x="191.5" y="0.0" width="46" height="51"/>
+                                                        <color key="backgroundColor" red="0.64887946844100952" green="0.8163723349571228" blue="0.069088198244571686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="40">
+                                                            <color key="titleColor" red="0.72935181856155396" green="0.17671751976013184" blue="0.084049619734287262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="makeBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHR-WX-ddi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="max: 500" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yXs-Ni-58l">
+                                                        <rect key="frame" x="241.5" y="0.0" width="133.5" height="51"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cfo-cX-ydQ" userLabel="RollToBetStack View">
+                                                <rect key="frame" x="0.0" y="114.5" width="375" height="51"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ha-2E-g1D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="51"/>
+                                                        <color key="backgroundColor" red="0.76219934225082397" green="0.82195311784744263" blue="0.071130625903606415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="Roll">
+                                                            <color key="titleColor" red="0.72935181856155396" green="0.17671751976013184" blue="0.084049619734287262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="rollDices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dTC-DT-aRq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frW-f7-r1k">
+                                                        <rect key="frame" x="126.5" y="0.0" width="122" height="51"/>
+                                                        <color key="backgroundColor" red="0.76219934229999997" green="0.82195311780000002" blue="0.071130625899999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="Keep Dices">
+                                                            <color key="titleColor" red="0.72935181859999998" green="0.1767175198" blue="0.084049619729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keepDices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFL-Dd-CWH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwJ-br-PpT">
+                                                        <rect key="frame" x="252.5" y="0.0" width="122.5" height="51"/>
+                                                        <color key="backgroundColor" red="0.64887946844100952" green="0.8163723349571228" blue="0.069088198244571686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="Custom Bet">
+                                                            <color key="titleColor" red="0.72935181856155396" green="0.17671751976013184" blue="0.084049619734287262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="makeBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dB-pg-DId"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-Uu-zgQ" userLabel="NextRoundStack View">
+                                                <rect key="frame" x="0.0" y="171.5" width="375" height="51"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNq-pU-9yN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                                        <color key="backgroundColor" red="0.76219934229999997" green="0.82195311780000002" blue="0.071130625899999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                                        <state key="normal" title="Next Round">
+                                                            <color key="titleColor" red="0.72935181859999998" green="0.1767175198" blue="0.084049619729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nextRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8MA-wn-n4Y"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.093036465346813202" green="0.55177485942840576" blue="0.11141452938318253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.83649879979999997" blue="0.3098390231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CUv-m4-J3H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Aj-9l-g6f"/>
+                            <constraint firstItem="CUv-m4-J3H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OgM-Bp-PHN"/>
+                            <constraint firstAttribute="trailing" secondItem="CUv-m4-J3H" secondAttribute="trailing" id="cbX-jE-AKd"/>
+                            <constraint firstAttribute="bottom" secondItem="CUv-m4-J3H" secondAttribute="bottom" id="tae-Wg-A7y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bankAmount" destination="IVO-4A-TVm" id="pqU-oy-FpS"/>
+                        <outlet property="currentRound" destination="WpP-wx-IwA" id="oSx-Tl-hYY"/>
+                        <outlet property="customBetInput" destination="yXs-Ni-58l" id="978-0p-UIH"/>
+                        <outlet property="gameDescription" destination="LoO-wU-IKo" id="uVl-mH-sdj"/>
+                        <outlet property="playersMoney" destination="fEe-Bm-g7I" id="XYJ-Cx-kwA"/>
+                        <outletCollection property="casinoDices" destination="zDf-Fq-X5b" collectionClass="NSMutableArray" id="c3q-BI-2eq"/>
+                        <outletCollection property="casinoDices" destination="da7-aJ-EOx" collectionClass="NSMutableArray" id="ho6-RR-hNH"/>
+                        <outletCollection property="casinoDices" destination="e5K-13-3E9" collectionClass="NSMutableArray" id="mBA-0L-27l"/>
+                        <outletCollection property="casinoDices" destination="PhQ-xc-3hg" collectionClass="NSMutableArray" id="COL-CP-Cba"/>
+                        <outletCollection property="casinoDices" destination="FH8-St-RgL" collectionClass="NSMutableArray" id="wCi-q3-6PT"/>
+                        <outletCollection property="playerDices" destination="3O1-ce-EkY" collectionClass="NSMutableArray" id="kXb-dQ-zKU"/>
+                        <outletCollection property="playerDices" destination="KyR-P2-rTw" collectionClass="NSMutableArray" id="d2p-cE-iZ5"/>
+                        <outletCollection property="playerDices" destination="CY1-cD-dwB" collectionClass="NSMutableArray" id="p0W-XZ-15U"/>
+                        <outletCollection property="playerDices" destination="FqM-vg-vrB" collectionClass="NSMutableArray" id="Lgx-Ak-x4c"/>
+                        <outletCollection property="playerDices" destination="FuL-wK-TM7" collectionClass="NSMutableArray" id="9rJ-Bs-aT1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="128" height="128"/>
+        <image name="dice2" width="64" height="64"/>
+        <image name="dice3" width="64" height="64"/>
+        <image name="dice4" width="128" height="128"/>
+        <image name="dice5" width="128" height="128"/>
+        <image name="dice6" width="128" height="128"/>
+        <image name="diceeLogo" width="294" height="192"/>
+    </resources>
+</document>
