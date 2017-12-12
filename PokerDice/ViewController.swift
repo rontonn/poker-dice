@@ -120,7 +120,6 @@ class ViewController: UIViewController {
             
             if isTypedIsInt(customBetInput.text!) && !(otherBetButtonWasPressed) {
                 customBet = Int(customBetInput.text!)!
-            
                 if customBet >= 0 && customBet <= 500 && (playersSum - customBet) >= 0 {
             
                     bankSum += 2 * customBet
@@ -131,8 +130,7 @@ class ViewController: UIViewController {
                     rollDiceCanBePressed = true
                     self.customBetInput.text = ""
                     
-                }
-            } else if customBet < 0 && customBet > 500 && (playersSum - customBet) >= 0 {
+                } else if customBet < 0 || customBet > 500 || (playersSum - customBet) < 0 {
                     
                 let alert = UIAlertController(title: "Warning!", message: "Please input only numbers from 0 to 500.", preferredStyle: .alert)
                 
@@ -143,7 +141,7 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                     
                 }
-            
+            }
             else {
                 let alert = UIAlertController(title: "Warning!", message: "Please input only numbers from 0 to 500.", preferredStyle: .alert)
                 
@@ -153,6 +151,7 @@ class ViewController: UIViewController {
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
+        
         }
         
     }
@@ -312,7 +311,7 @@ class ViewController: UIViewController {
                 }
                 
             for i in 0...4 {
-                print("dice to be changed = \(diceToBeChanged)")
+                
                 if diceToBeChanged[i] == 1 {
                     randomDice = Int(arc4random_uniform(6)) + 1
                     playerHandArray[i] = randomDice
@@ -337,7 +336,7 @@ class ViewController: UIViewController {
                 }
                 
                 for i in 0...4 {
-                    print("dice to be changed = \(diceToBeChanged)")
+                    
                     if diceToBeChanged[i] == 1 {
                         randomDice = Int(arc4random_uniform(6)) + 1
                         playerHandArray[i] = randomDice
